@@ -1,14 +1,13 @@
 import { Page } from './page.js';
-import { browser } from '@wdio/globals'
+import { browser } from '@wdio/globals';
 
 class HomePage extends Page {
-
     get signInLink() { return $('//header[@class="page-header"]//a[contains(text(), "Sign In")]'); }
     get greetMessage() { return $('.page-header .logged-in'); }
     
-    get dropdownButton() { return $('button[data-action=customer-menu-toggle]'); }
-    dropdownItem(text) { 
-        return $(`//header//div[@class="customer-menu"]//a[contains(text(), "${text}")]`); 
+    get dropdownButton() { return $('.page-header button[data-action=customer-menu-toggle]'); }
+    dropdownItem(text) {
+        return $(`//header//div[@class="customer-menu"]//a[contains(text(), "${text}")]`);
     }
 
     async open() {
@@ -22,5 +21,3 @@ class HomePage extends Page {
 }
 
 export default new HomePage();
-
-//header//div[@class="customer-menu"]//a[contains(text(), "My Account")]

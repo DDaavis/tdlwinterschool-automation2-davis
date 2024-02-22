@@ -1,5 +1,5 @@
 {
-  "name": "another-automation",
+  "name": "winterschool-project-2",
   "type": "module",
   "devDependencies": {
     "@wdio/allure-reporter": "^8.32.2",
@@ -12,7 +12,6 @@
     "wdio": "wdio run ./wdio.conf.js",
     "allure": "allure serve",
     "tag": "wdio run ./wdio.conf.js --cucumberOpts.tags"
-
   },
   "dependencies": {
     "allure-commandline": "^2.27.0"

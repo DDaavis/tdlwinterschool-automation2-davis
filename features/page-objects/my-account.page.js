@@ -1,8 +1,8 @@
 import { Page } from './page.js';
-import { browser } from '@wdio/globals'
+import { browser } from '@wdio/globals';
 
-class myAccountPage extends Page {
-    get contactInformationContent() { return $ ('.box-information p'); }
+class MyAccountPage extends Page {
+    get contactInformationContent() { return $('.box-information p'); }
 }
 
-export default new myAccountPage();
+export default new MyAccountPage();
